@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.Set;
 import java.util.HashSet;
 
-public class ArrayListSample{
+public class CollectionSample{
     public static void main(String[] args) {
         List<String> list = new ArrayList<String>();
         Set<String> set = new HashSet<String>();
@@ -11,7 +11,14 @@ public class ArrayListSample{
             list.add(arg);
             set.add(arg);
         }
-        System.out.println("ArrayList :" + list);
-        System.out.println("HashSet :" + set);
+        System.out.print("ArrayList :");
+        for (String str : list) {
+           System.out.print(str);
+        }
+        System.out.println();
+        System.out.print("HashSet :");
+        for (String str : set) {
+           System.out.print(str);
+        }
     }
 }
